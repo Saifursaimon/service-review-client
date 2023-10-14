@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
 const menuItems = 
 <>
 
-        <li className='font-semibold'><a>Home</a></li>
-        <li className='font-semibold'><a>Services</a></li>
+        <li className='font-semibold'><Link to='/'>Home</Link></li>
+        <li className='font-semibold'><Link to='/services'>Services</Link></li>
         <li className='mb-4 font-semibold'><a>Blogs</a></li>
 </>
 
@@ -29,7 +30,7 @@ const menuButtons =
         {menuButtons}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <Link to='/' className="btn btn-ghost normal-case text-xl">daisyUI</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
